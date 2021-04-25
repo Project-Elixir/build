@@ -36,11 +36,5 @@ PRODUCT_PACKAGES += \
     messaging \
     PhotoTable \
     preinstalled-packages-platform-aosp-product.xml \
-    WallpaperPicker \
+    WallpaperPicker
 
-# Telephony:
-#   Provide a APN configuration to GSI product
-ifeq ($(CUSTOM_BUILD),)
-PRODUCT_COPY_FILES += \
-    device/sample/etc/apns-full-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
-endif
