@@ -410,6 +410,7 @@ ifneq ($(CUSTOM_BUILD),)
 include vendor/aosp/config/BoardConfig.mk
 endif
 
+-include vendor/extra/BoardConfigExtra.mk
 # General entries for project pathmap.  Any entries listed here should
 # be device and hardware independent.
 $(call project-set-path-variant,ril,TARGET_RIL_VARIANT,hardware/ril)
